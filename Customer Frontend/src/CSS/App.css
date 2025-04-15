@@ -1,0 +1,145 @@
+.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  /* Stack cells vertically on small screens */
+  @media (max-width: 600px) {
+    .table-row {
+      flex-direction: column;
+    }
+  }
+  
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    /* CSS for small mobile devices */
+    .product-card{
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 10px;
+      width: 45%;
+      height:290px;
+      font-size:smaller;
+      background:linear-gradient(to right, #d1efa1, #adf274, #d1efa1);
+    }
+    .cart{
+      font-size: smaller;
+    }
+    h6,h5{
+      font-size: smaller;
+    }
+    h4{
+      font-size:medium;
+    }
+    h1{
+      font-size: large;
+    }
+    p{
+      font-size:small;
+    }
+    .btn{
+      font-size:x-small;
+    }
+    th:nth-child(5), td:nth-child(5) {
+      display: none;
+    }
+    .options{
+      display:flex;
+      flex-direction: column;
+    }
+    .navlogo{
+      height: 35px;
+      width: 40px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    /* CSS for small mobile devices */
+    .product-card{
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 10px;
+      width: 250px;
+      background:linear-gradient(to right, #d1efa1, #adf274, #d1efa1);
+    }
+  }
+  
+  
+  
+  input[type='number'] {
+    width: 50px;
+    padding: 5px;
+    height: 30px;
+  }
+
+  /* App.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url("../Images/backgroundImage.png"); /* Replace with your actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed; /* Ensure the background stays fixed */
+  width: 100%;
+  height: 100%;
+}
+
+.content-container {
+  position: relative; /* To keep the content above the fixed background */
+  z-index: 1; /* Ensure the content is above the background */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a slight background to the content for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.footer-section {
+  position: relative; /* To keep the footer content above the fixed background */
+  z-index: 1; /* Ensure the footer content is above the background */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a slight background to the content for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+  button{
+    margin-top: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  .btn:hover{
+    border: 3px greenyellow solid;
+  }
+  .tablerow{
+    margin-top: 10px;
+  }
+  th,td{
+    text-align: center;
+  }
+
+  .cart,.table,.employees,.addproduct,.listproducts,.orders,.modal-content{
+    background-color: rgb(249, 233, 213);
+  }
+
+  .shadebackground{
+    background: linear-gradient(to right,#fc9075, #f39349, #fbb913);
+  }
+
+  .modal-content{
+    top: 300px;
+    height: 50px;
+    width: 450px;
+  }
